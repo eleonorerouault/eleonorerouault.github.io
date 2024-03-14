@@ -10,7 +10,7 @@ nav_order: 5
 
 
 
-- Spring 2022-24: Macroeconomics, B.A 1st year (Mathematic track)
-- Spring 2022: Qualitative variable using STATA, M.A 1st year (International Affairs track)
-- Spring 2021: Introduction to macroeconomics, B.A 1st year
-- Fall 2020: National Accountability, B.A 1st year
+- 2022-24: Macroeconomics (BSc Economics and Mathematics, 1st year)
+- 2022: Qualitative variable using STATA (MPhil Developement Economics, 4th year)
+- 2021: Introduction to macroeconomics (BSc Economics, 1st year)
+- 2020: National Accountability (BSc Economics, 1st year)
