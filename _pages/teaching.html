@@ -5,8 +5,53 @@ permalink: /teaching/
 author_profile: true
 ---
 
-{% include base_path %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .experience {
+            margin-bottom: 10px;
+        }
+        .date {
+            float: right;
+            font-style: italic;
+        }
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
 
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+    <div class="experience">
+        <span>Macroeconomics, 1st year of BSc in Economics and Mathematics</span>
+        <span class="date">2021-2024</span>
+        <div class="clear"></div>
+    </div>
+
+    <div class="experience">
+        <span>Stata, MSc in Development Economics</span>
+        <span class="date">2021-2022</span>
+        <div class="clear"></div>
+    </div>
+
+    <div class="experience">
+        <span>Macroeconomics, 1st year of BSc in Economics</span>
+        <span class="date">2021</span>
+        <div class="clear"></div>
+    </div>
+
+    <div class="experience">
+        <span>National Accounting, 1st year of BSc in Economics</span>
+        <span class="date">2020</span>
+        <div class="clear"></div>
+    </div>
+</body>
+</html>
