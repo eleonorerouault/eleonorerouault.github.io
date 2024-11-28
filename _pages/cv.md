@@ -12,16 +12,7 @@ author_profile: true
   
 **Research Interests**
 * Applied microeconomics, Development, Health, Agriculture, Environment, Childhood
-  
-**Teaching Experience**
-* 2021-2024: Macroeconomics
- * 1st year BSc in Economics and Mathematics, Université Paris-Dauphine
-* 2021-2022: Stata
- * MSc in Quantitative Economics, Université Paris-Dauphine
-* 2021: Macroeconomics
- * 1st year BSc in Economics, Université Paris-Dauphine
-* 2020: National Accounting
- * 1st year BSc in Economics, Université Paris-Dauphine
+
 **Talks**
 - CSAE, Oxford (forthcoming) [2025]
 - DIAL Seminar, Paris [2024]
