@@ -32,3 +32,8 @@ author_profile: true
 - Journées des doctorants - Université Paris-Dauphine, PSL, Paris [2022]
 - Applied Microeconomics Days, Online [2021]
 - Dauphine PhD Workshop, Paris [2021]
+
+**References**
+* Clémentine Garrouste 
+* Phillipe Quirion 
+* Flore Gubert 
