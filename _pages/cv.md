@@ -8,7 +8,6 @@ redirect_from:
 ---
 
 **Education**
-
 * Ph.D. in Economics, Université Paris-Dauphine, PSL, 2019-2024
   * Dissertation: "Three essays on environmental shocks and health, from birth to the end of life"
 * MPhil in Health Economics, Université Paris-Dauphine, PSL, 2017-2019
@@ -28,7 +27,6 @@ redirect_from:
   * 1st year BSc in Economics, Université Paris-Dauphine
 
 **Talks**
-
 - CSAE, Oxford (forthcoming) [2025]
 - DIAL Seminar, Paris [2024]
 - AFEDEV Job Market Training, Clermont-Ferrand [2024]
