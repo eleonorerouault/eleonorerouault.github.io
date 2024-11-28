@@ -7,7 +7,7 @@ author_profile: true
 
 **Education**
 * Ph.D. in Economics, Université Paris-Dauphine, PSL, 2019-2024
- * Dissertation: "Three essays on environmental shocks and health, from birth to the end of life"
+   *Dissertation: Three essays on environmental shocks and health, from birth to the end of life*
 * MPhil in Health Economics, Université Paris-Dauphine, PSL, 2017-2019
   
 **Research Interests**
