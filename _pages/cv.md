@@ -7,17 +7,17 @@ redirect_from:
   - /resume
 ---
 
-# Education
+**Education**
 
 * Ph.D. in Economics, Université Paris-Dauphine, PSL, 2019-2024
   * Dissertation: "Three essays on environmental shocks and health, from birth to the end of life"
 * MPhil in Health Economics, Université Paris-Dauphine, PSL, 2017-2019
 
 
-# Research Interests
+**Research Interests**
 * Applied microeconomics, Development, Health, Agriculture, Environment, Childhood
   
-# Teaching Experience
+**Teaching Experience**
 * 2021-2024: Macroeconomics
   * 1st year BSc in Economics and Mathematics, Université Paris-Dauphine
 * 2021-2022: Stata
@@ -27,7 +27,7 @@ redirect_from:
 * 2020: National Accounting
   * 1st year BSc in Economics, Université Paris-Dauphine
 
-# Presentations
+**Talks**
 
 - CSAE, Oxford (forthcoming) [2025]
 - DIAL Seminar, Paris [2024]
