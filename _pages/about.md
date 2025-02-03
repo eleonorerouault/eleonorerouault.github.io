@@ -11,6 +11,6 @@ I am currently completing my PhD at Université Paris-Dauphine, PSL. I am an app
 
 **I am on the Job Market 2024-2025**
 
-🐤 [Find me on Twitter](https://x.com/eleonorerouault)  
+🦋 [Find me on BlueSky](https://bsky.app/profile/eleonorerouault.bsky.social)  
 ✉️ Contact me at [eleonore.rouault@dauphine.psl.eu](mailto:eleonore.rouault@dauphine.psl.eu)
 
