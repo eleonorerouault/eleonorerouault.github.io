@@ -11,7 +11,7 @@ I am an applied microeconomist working at the intersection of environmental, dev
 
 In my job market paper, I explore the very long-run effect of early life exposure to weather shocks on cognitive functions measured after 50 years old in rural China. 
 
-I completed my PhD in economics from the University Paris-Dauphine, PSL (December 2024)
+I completed my PhD in economics at the University Paris-Dauphine, PSL (December 2024)
 
 **I am on the Job Market 2024-2025**
 
