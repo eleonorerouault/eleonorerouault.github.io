@@ -9,7 +9,7 @@ redirect_from:
 
 I am an applied microeconomist working at the intersection of environmental, development, and health economics. My research uses survey, administrative and spatial data to focus on the health consequences of exposure to various environmental shocks, such as weather shocks or water pollution.
 
-In my Job Market Paper, I explore the very long run effect of early life exposure to weather shocks on cognitive functions measured after 50 years old in rural historical China. 
+In my job market paper, I explore the very long-run effect of early life exposure to weather shocks on cognitive functions measured after 50 years old in rural China. 
 
 I completed my PhD in economics from the University Paris-Dauphine, PSL (December 2024)
 
