@@ -31,7 +31,54 @@ author_profile: true
         line-height: 1.5;
         font-size: 0.95em;
     }
-    
+
+    /* ---- Abstract styles (proposal #1) ---- */
+    .paper-abstract {
+        margin: 14px 0;
+        padding: 14px 18px;
+        background-color: #f9fafb;
+        border-left: 3px solid #2196F3;
+        border-radius: 4px;
+        color: #494e52;
+        line-height: 1.6;
+        font-size: 0.94em;
+        text-align: justify;
+        white-space: pre-line; /* preserves paragraph breaks nicely */
+    }
+
+    /* ---- Collapsible control (proposal #2) ---- */
+    details.abstract-block {
+        margin-top: 8px;
+    }
+
+    details.abstract-block > summary {
+        list-style: none;           /* remove native marker */
+        cursor: pointer;
+        font-size: 0.92em;
+        color: #1976D2;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        user-select: none;
+    }
+
+    /* Custom caret */
+    details.abstract-block > summary::before {
+        content: "▸";
+        display: inline-block;
+        transform: translateY(1px);
+        transition: transform 0.2s ease;
+    }
+
+    details.abstract-block[open] > summary::before {
+        transform: rotate(90deg) translateY(0);
+    }
+
+    /* Remove the default disclosure triangle on Safari */
+    details.abstract-block > summary::-webkit-details-marker {
+        display: none;
+    }
+
     .paper-btn {
         display: inline-flex;
         align-items: center;
@@ -64,9 +111,15 @@ author_profile: true
     </div>
     <div class="paper-description">
         <i>Previously circulated as "Early-life weather shocks and long-term cognition in China".</i>
-        <br><br>
-        New version coming soon
     </div>
+
+    <!-- Collapsible abstract (open/close) -->
+    <details class="abstract-block">
+        <summary>Show abstract</summary>
+        <div class="paper-abstract">
+A large body of literature has established causal links between prenatal and early-life shocks and adult health and human capital outcomes. However, few of these studies focus on elderly populations, particularly in low-and middle-income countries, where population ageing has become the foremost demographic concern. Moreover, most rely on cross-sectional analyses, leaving the long-term effects on health trajectories largely unknown. This study provides one of the first evidence on the effects of early-life shocks on long-term cognitive scores and depressive symptoms among Chinese elderly, examining both the levels and dynamics of these outcomes by leveraging the cross-sectional and longitudinal dimensions of the China Health and Retirement Longitudinal Survey (CHARLS). Relying on random assignment of early-life weather shocks at different timings from the prenatal period to 15 years old, I test whether early-life circumstances causally affect mental health and cognitive levels and dynamics in old age. Results show that (i) average exposure to early-life weather shocks from birth to 5 years old leads to a loss of 3.8% in memory score, 2.0% in numeracy score, and a 5.2% increase in depression score after 50 years old, (ii) accelerated cognitive decline and depressive symptoms trajectories over time are observed among individuals exposed, (iii) offsetting mechanisms between ages five and fifteen, in particular schooling and weather-induced later life migration, likely explain the absence of clear effects for this exposure period.
+        </div>
+    </details>
 </div>
 
 <div class="research-section">
@@ -82,6 +135,17 @@ author_profile: true
     <div class="paper-title">
         Fertilizers, water quality and perinatal health in India (with Claire Lepault and Raphaël Soubeyran)
     </div>
-     <div class="paper-description">
-India’s substantial fertilizer consumption, a legacy of the Green Revolution, raises debates regarding its trade-offs between agricultural productivity and environmental and health concerns. Consumption of nitrate and nitrite has been linked to health issues like methemoglobinemia, a potentially fatal condition for infants. We utilize new data on agricultural practices, water pollution, and health outcomes to explore the relationship between fertilizer runoff, nitrogen concentration in water, and child mortality.     </div>
+    <div class="paper-description">
+        India’s substantial fertilizer consumption, a legacy of the Green Revolution, raises debates regarding its trade-offs between agricultural productivity and environmental and health concerns. Consumption of nitrate and nitrite has been linked to health issues like methemoglobinemia, a potentially fatal condition for infants. We utilize new data on agricultural practices, water pollution, and health outcomes to explore the relationship between fertilizer runoff, nitrogen concentration in water, and child mortality.
+    </div>
 </div>
+
+<script>
+/* Optional enhancement: change the summary text when opened/closed */
+document.querySelectorAll('details.abstract-block').forEach(function(d) {
+    const summary = d.querySelector('summary');
+    const update = () => { summary.textContent = d.open ? 'Hide abstract' : 'Show abstract'; };
+    update();
+    d.addEventListener('toggle', update);
+});
+</script>
