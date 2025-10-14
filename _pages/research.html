@@ -32,7 +32,7 @@ author_profile: true
         font-size: 0.95em;
     }
 
-    /* ---- Abstract styles (proposal #1) ---- */
+    /* ---- Abstract styles ---- */
     .paper-abstract {
         margin: 14px 0;
         padding: 14px 18px;
@@ -43,16 +43,16 @@ author_profile: true
         line-height: 1.6;
         font-size: 0.94em;
         text-align: justify;
-        white-space: pre-line; /* preserves paragraph breaks nicely */
+        white-space: pre-line;
     }
 
-    /* ---- Collapsible control (proposal #2) ---- */
+    /* ---- Collapsible control ---- */
     details.abstract-block {
         margin-top: 8px;
     }
 
     details.abstract-block > summary {
-        list-style: none;           /* remove native marker */
+        list-style: none;
         cursor: pointer;
         font-size: 0.92em;
         color: #1976D2;
@@ -62,7 +62,6 @@ author_profile: true
         user-select: none;
     }
 
-    /* Custom caret */
     details.abstract-block > summary::before {
         content: "▸";
         display: inline-block;
@@ -71,10 +70,9 @@ author_profile: true
     }
 
     details.abstract-block[open] > summary::before {
-        transform: rotate(90deg) translateY(0);
+        transform: rotate(90deg);
     }
 
-    /* Remove the default disclosure triangle on Safari */
     details.abstract-block > summary::-webkit-details-marker {
         display: none;
     }
@@ -83,21 +81,21 @@ author_profile: true
         display: inline-flex;
         align-items: center;
         padding: 6px 12px;
-        background-color: #2196F3;  /* Lighter blue for the button */
+        background-color: #2196F3;
         color: white;
         text-decoration: none;
         border-radius: 4px;
         font-size: 0.85em;
         transition: all 0.2s ease;
-        box-shadow: 0 2px 4px rgba(33, 150, 243, 0.2);  /* Subtle shadow */
+        box-shadow: 0 2px 4px rgba(33, 150, 243, 0.2);
     }
     
     .paper-btn:hover {
-        background-color: #1976D2;  /* Darker blue on hover */
+        background-color: #1976D2;
         text-decoration: none;
         color: white;
-        box-shadow: 0 3px 6px rgba(33, 150, 243, 0.3);  /* Enhanced shadow on hover */
-        transform: translateY(-1px);  /* Slight lift effect */
+        box-shadow: 0 3px 6px rgba(33, 150, 243, 0.3);
+        transform: translateY(-1px);
     }
     
     .paper-btn i {
@@ -105,6 +103,7 @@ author_profile: true
     }
 </style>
 
+<!-- ===== Paper 1 ===== -->
 <div class="research-section">
     <div class="paper-title">
         Childhood roots of aging brain <i>Job Market Paper</i>
@@ -113,7 +112,6 @@ author_profile: true
         <i>Previously circulated as "Early-life weather shocks and long-term cognition in China".</i>
     </div>
 
-    <!-- Collapsible abstract (open/close) -->
     <details class="abstract-block">
         <summary>Show abstract</summary>
         <div class="paper-abstract">
@@ -122,26 +120,35 @@ A large body of literature has established causal links between prenatal and ear
     </details>
 </div>
 
+<!-- ===== Paper 2 ===== -->
 <div class="research-section">
     <div class="paper-title">
         The effect of high temperature on seniors cognition: evidence from European countries (with Eric Bonsang and Clémentine Garrouste)
     </div>
-    <div class="paper-description">
-        This study aims at investigating the effect of high temperatures on cognitive functions of individuals aged 50 and over. The empirical analysis exploits longitudinal data from the SHARE Survey on Health, Ageing and Retirement in Europe which is combined with measures of daily temperature collected by ground weather stations. Our estimates are based on an individual fixed-effect strategy and show that high temperatures impede the cognitive functions. Our results reveal a stronger effect for poorer individuals, those aged over 65 years as well as those who are overweight. The poorest elderly are the more vulnerable to global warming, which impacts their working memory and fluency. This may affect their capacity to make complex decisions and, in turn, negatively affect their standard of living. Thus, our results suggest that global warming could amplify socio-economic inequalities.
-    </div>
+
+    <details class="abstract-block">
+        <summary>Show abstract</summary>
+        <div class="paper-abstract">
+This study aims at investigating the effect of high temperatures on cognitive functions of individuals aged 50 and over. The empirical analysis exploits longitudinal data from the SHARE Survey on Health, Ageing and Retirement in Europe which is combined with measures of daily temperature collected by ground weather stations. Our estimates are based on an individual fixed-effect strategy and show that high temperatures impede the cognitive functions. Our results reveal a stronger effect for poorer individuals, those aged over 65 years as well as those who are overweight. The poorest elderly are the more vulnerable to global warming, which impacts their working memory and fluency. This may affect their capacity to make complex decisions and, in turn, negatively affect their standard of living. Thus, our results suggest that global warming could amplify socio-economic inequalities.
+        </div>
+    </details>
 </div>
 
+<!-- ===== Paper 3 ===== -->
 <div class="research-section">
     <div class="paper-title">
         Fertilizers, water quality and perinatal health in India (with Claire Lepault and Raphaël Soubeyran)
     </div>
-    <div class="paper-description">
-        India’s substantial fertilizer consumption, a legacy of the Green Revolution, raises debates regarding its trade-offs between agricultural productivity and environmental and health concerns. Consumption of nitrate and nitrite has been linked to health issues like methemoglobinemia, a potentially fatal condition for infants. We utilize new data on agricultural practices, water pollution, and health outcomes to explore the relationship between fertilizer runoff, nitrogen concentration in water, and child mortality.
-    </div>
+
+    <details class="abstract-block">
+        <summary>Show abstract</summary>
+        <div class="paper-abstract">
+India’s substantial fertilizer consumption, a legacy of the Green Revolution, raises debates regarding its trade-offs between agricultural productivity and environmental and health concerns. Consumption of nitrate and nitrite has been linked to health issues like methemoglobinemia, a potentially fatal condition for infants. We utilize new data on agricultural practices, water pollution, and health outcomes to explore the relationship between fertilizer runoff, nitrogen concentration in water, and child mortality.
+        </div>
+    </details>
 </div>
 
 <script>
-/* Optional enhancement: change the summary text when opened/closed */
 document.querySelectorAll('details.abstract-block').forEach(function(d) {
     const summary = d.querySelector('summary');
     const update = () => { summary.textContent = d.open ? 'Hide abstract' : 'Show abstract'; };
