@@ -16,7 +16,8 @@ author_profile: true
 * Applied microeconomics, Development, Health, Agriculture, Environment, Childhood
 
 **Talks**
-- CSAE, Oxford (forthcoming) [2025]
+- CSAE, Oxford [2025]
+- CERDI Seminar, Clermont-Ferrand [2025]
 - DIAL Seminar, Paris [2024]
 - AFEDEV Job Market Training, Clermont-Ferrand [2024]
 - EUDN PhD Workshop at PSE, Paris [2024]
