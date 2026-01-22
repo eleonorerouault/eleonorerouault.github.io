@@ -77,29 +77,43 @@ author_profile: true
         display: none;
     }
 
+    /* ===== Button appearance (updated) ===== */
     .paper-btn {
         display: inline-flex;
         align-items: center;
-        padding: 6px 12px;
-        background-color: #2196F3;
-        color: white;
+        gap: 6px;
+        padding: 4px 10px;
+        background-color: rgba(33, 150, 243, 0.08);
+        color: #1976D2;
         text-decoration: none;
-        border-radius: 4px;
-        font-size: 0.85em;
+        border-radius: 999px;
+        border: 1px solid rgba(25, 118, 210, 0.35);
+        font-size: 0.82em;
+        font-weight: 500;
+        line-height: 1;
         transition: all 0.2s ease;
-        box-shadow: 0 2px 4px rgba(33, 150, 243, 0.2);
+        box-shadow: none;
     }
     
     .paper-btn:hover {
-        background-color: #1976D2;
+        background-color: rgba(33, 150, 243, 0.14);
         text-decoration: none;
-        color: white;
-        box-shadow: 0 3px 6px rgba(33, 150, 243, 0.3);
+        color: #1976D2;
+        border-color: rgba(25, 118, 210, 0.55);
         transform: translateY(-1px);
+        box-shadow: none;
     }
     
     .paper-btn i {
         margin-right: 5px;
+    }
+
+    /* ===== Button position helper (added) ===== */
+    .paper-links {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        flex-wrap: wrap;
     }
 </style>
 
@@ -112,20 +126,24 @@ author_profile: true
         <i>Previously circulated as "Early-life weather shocks and long-term cognition in China".</i>
     </div>
 
-    <details class="abstract-block">
-        <summary>Show abstract</summary>
-        <div class="paper-abstract">
+    <!-- ===== Button moved here (same line as abstract toggle) ===== -->
+    <div class="paper-links">
+        <details class="abstract-block">
+            <summary>Show abstract</summary>
+            <div class="paper-abstract">
 How early-life circumstances shape the brain aging process? This study sheds new lights on the effects of early-life shocks on long-term cognitive scores and depressive symptoms among Chinese elderly by leveraging the cross-sectional and longitudinal dimensions of the China Health and Retirement Longitudinal Survey (CHARLS). Relying on random assignment of early-life weather shocks at different timings from the prenatal period to 15 years old, I test whether early-life circumstances causally affect mental health and cognitive levels and dynamics observed from 50 to 80 years old. Results show that (i) weather shocks endured from birth to 5 years old reduce memory and numeracy scores, and increase depressive symptoms (ii) accelerate the cognitive decline and depressive symptoms trajectories over time, (iii) between ages 5 and 15, confounding factors such as schooling and weather-driven migration in later life offset the detrimental effect of weather shocks, suggesting that late childhood may be as critical as earlier years.        </div>
-    </details>
+        </details>
+
+        <a class="paper-btn"
+           href="https://www.dropbox.com/scl/fi/qdhkyy0ytnl0ufi7m119f/childhood_roots_rouault.pdf?rlkey=572231zdr9g8qnro6if1hbva4&dl=0"
+           target="_blank" rel="noopener">
+            <span class="icon">📄</span> PDF
+        </a>
+    </div>
 </div>
 
-<p style="margin: 10px 0 6px 0;">
-  <a class="paper-btn"
-     href="https://www.dropbox.com/scl/fi/qdhkyy0ytnl0ufi7m119f/childhood_roots_rouault.pdf?rlkey=572231zdr9g8qnro6if1hbva4&dl=0"
-     target="_blank" rel="noopener">
-    <span class="icon">📄</span> PDF
-  </a>
-</p>
+
+
 
 
 <!-- ===== Paper 2 ===== -->
