@@ -6,74 +6,105 @@ author_profile: true
 ---
 
 <style>
-    .research-section {
-        margin-bottom: 35px;
+    :root {
+        --accent: #1976D2;
+        --accent-soft: rgba(33, 150, 243, 0.08);
+        --ink: #494e52;
+        --muted: #6b7280;
     }
-    
+
+    .research-section { margin-bottom: 32px; }
+
     .paper-title {
         font-size: 1.1em;
-        font-weight: 500;
-        margin-bottom: 8px;
-        color: #494e52;
+        font-weight: 600;
+        margin-bottom: 4px;
+        color: #2c3136;
         line-height: 1.4;
     }
-    
-    .paper-title i {
-        font-weight: normal;
-        color: #1976D2;
-        font-size: 0.95em;
+
+    /* Ligne secondaire : coauteurs */
+    .paper-authors {
+        font-size: 0.9em;
+        color: var(--muted);
+        margin-bottom: 8px;
     }
-    
+
     .paper-abstract {
-        margin: 14px 0;
+        margin: 12px 0;
         padding: 14px 18px;
         background-color: #f9fafb;
         border-left: 3px solid #2196F3;
         border-radius: 4px;
-        color: #494e52;
+        color: var(--ink);
         line-height: 1.6;
         font-size: 0.94em;
         text-align: justify;
         white-space: pre-line;
     }
 
-    details.abstract-block {
-        margin-top: 8px;
+    /* ---- Badges de statut unifiés ---- */
+    .status-badge {
+        display: inline-block;
+        padding: 2px 10px;
+        border-radius: 999px;
+        font-size: 0.72em;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        vertical-align: middle;
+        margin-left: 8px;
+    }
+    .status-badge.is-submitted {
+        background-color: rgba(33, 150, 243, 0.10);
+        color: #1565c0;
+        border: 1px solid rgba(21, 101, 192, 0.35);
+    }
+    .status-badge.is-field {
+        background-color: rgba(76, 175, 80, 0.10);
+        color: #2e7d32;
+        border: 1px solid rgba(46, 125, 50, 0.35);
+    }
+    .status-badge.is-revise {
+        background-color: rgba(255, 152, 0, 0.10);
+        color: #b26a00;
+        border: 1px solid rgba(178, 106, 0, 0.35);
     }
 
+    /* ---- Abstract repliable ---- */
+    details.abstract-block { margin-top: 6px; }
     details.abstract-block > summary {
         list-style: none;
         cursor: pointer;
-        font-size: 0.92em;
-        color: #1976D2;
+        font-size: 0.9em;
+        color: var(--accent);
         display: inline-flex;
         align-items: center;
         gap: 6px;
         user-select: none;
     }
-
     details.abstract-block > summary::before {
         content: "▸";
         display: inline-block;
-        transform: translateY(1px);
         transition: transform 0.2s ease;
     }
+    details.abstract-block[open] > summary::before { transform: rotate(90deg); }
+    details.abstract-block > summary::-webkit-details-marker { display: none; }
 
-    details.abstract-block[open] > summary::before {
-        transform: rotate(90deg);
+    /* ---- Liens / boutons ---- */
+    .paper-links {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-top: 8px;
     }
-
-    details.abstract-block > summary::-webkit-details-marker {
-        display: none;
-    }
-
     .paper-btn {
         display: inline-flex;
         align-items: center;
         gap: 6px;
-        padding: 4px 10px;
-        background-color: rgba(33, 150, 243, 0.08);
-        color: #1976D2;
+        padding: 4px 12px;
+        background-color: var(--accent-soft);
+        color: var(--accent);
         text-decoration: none;
         border-radius: 999px;
         border: 1px solid rgba(25, 118, 210, 0.35);
@@ -81,64 +112,100 @@ author_profile: true
         font-weight: 500;
         line-height: 1;
         transition: all 0.2s ease;
-        box-shadow: none;
     }
-    
     .paper-btn:hover {
         background-color: rgba(33, 150, 243, 0.14);
         text-decoration: none;
-        color: #1976D2;
+        color: var(--accent);
         border-color: rgba(25, 118, 210, 0.55);
         transform: translateY(-1px);
-        box-shadow: none;
     }
 
-    .paper-links {
-        display: inline-flex;
-        align-items: center;
-        gap: 12px;
-        flex-wrap: wrap;
+    .section-heading {
+        font-size: 1.2em;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 20px;
     }
+    .section-divider { margin: 48px 0; border: none; border-top: 1px solid #ddd; }
 </style>
 
-<!-- ===== Paper 1 ===== -->
-<!-- ===== Paper 1 ===== -->
+<!-- ===== Working / submitted papers ===== -->
+
+<!-- Paper 1 -->
 <div class="research-section">
     <div class="paper-title">
         Childhood Roots of the Aging Brain: Evidence from Weather Shocks in Rural China
-        <span style="display: inline-block; margin-left: 8px; padding: 2px 10px;
-                     background-color: rgba(33, 150, 243, 0.10);
-                     color: #1565c0;
-                     border: 1px solid rgba(21, 101, 192, 0.35);
-                     border-radius: 999px; font-size: 0.72em; font-weight: 500;
-                     vertical-align: middle;">
-            Submitted
-        </span>
+        <span class="status-badge is-submitted">Submitted</span>
     </div>
+    <div class="paper-authors">Job market paper · 2026</div>
+
+    <details class="abstract-block">
+        <summary>Show abstract</summary>
+        <div class="paper-abstract">
+A large literature documents how early-life conditions shape health and human capital, yet their effects in old age, where cognitive decline and depression impose large burdens, remain poorly understood. Using quasi-random variation in weather shocks across birth cohorts of rural elderly Chinese, I find that early adversity leaves two distinct marks on cognitive aging: it lowers cognitive skills at age 50 and accelerates subsequent decline. The first five years of life are a critical period for cognitive levels: individuals exposed during this window score lower on memory and numeracy after age 50. The same window also shapes mental health trajectories: depression worsens faster among exposed individuals over subsequent decades. Shocks during ages 5–15 independently accelerate numeracy decline, though schooling gains partially offset these effects.
+        </div>
+    </details>
 
     <div class="paper-links">
-        <details class="abstract-block">
-            <summary>Show abstract</summary>
-            <div class="paper-abstract">
-A large literature documents how early-life conditions shape health and human capital, yet their effects in old age, where cognitive decline and depression impose large burdens, remain poorly understood. Using quasi-random variation in weather shocks across birth cohorts of rural elderly Chinese, I find that early adversity leaves two distinct marks on cognitive aging: it lowers cognitive skills at age 50 and accelerates subsequent decline. The first five years of life are a critical period for cognitive levels: individuals exposed during this window score lower on memory and numeracy after age 50. The same window also shapes mental health trajectories: depression worsens faster among exposed individuals over subsequent decades. Shocks during ages 5–15 independently accelerate numeracy decline, though schooling gains partially offset these effects.
-            </div>
-        </details>
-        <a class="paper-btn" href="https://www.dropbox.com/scl/fi/q4pjnpqjvkyvudps4o08k/Manuscrit_ongoing.pdf?rlkey=yqax9g9a7ja5i2ilug65yqs7r&st=tox7emdi&dl=0" target="_blank" rel="noopener">
-            <span class="icon">📄</span> PDF
+        <a class="paper-btn" href="https://www.dropbox.com/scl/fi/q4pjnpqjvkyvudps4o08k/Manuscrit_ongoing.pdf?rlkey=yqax9g9a7ja5i2ilug65yqs7r&st=tox7emdi&dl=0" target="_blank" rel="noopener" aria-label="PDF of Childhood Roots of the Aging Brain">
+            📄 PDF
         </a>
+        <!-- Ajoute ici d'autres liens si besoin :
+        <a class="paper-btn" href="#" target="_blank" rel="noopener">🖥️ Slides</a>
+        <a class="paper-btn" href="#" target="_blank" rel="noopener">SSRN</a>
+        -->
     </div>
 </div>
 
-<!-- ===== Paper 2 ===== -->
+<!-- Paper 2 -->
 <div class="research-section">
     <div class="paper-title">
-        Fertilizers, water quality and perinatal health in India (with Claire Lepault and Raphaël Soubeyran)
+        Fertilizers, Water Quality and Perinatal Health in India
     </div>
+    <div class="paper-authors">with Claire Lepault and Raphaël Soubeyran · Work in progress</div>
 
     <details class="abstract-block">
         <summary>Show abstract</summary>
         <div class="paper-abstract">
 India's substantial fertilizer consumption, a legacy of the Green Revolution, raises debates regarding its trade-offs between agricultural productivity and environmental and health concerns. Consumption of nitrate and nitrite has been linked to health issues like methemoglobinemia, a potentially fatal condition for infants. We utilize new data on agricultural practices, water pollution, and health outcomes to explore the relationship between fertilizer runoff, nitrogen concentration in water, and child mortality.
+        </div>
+    </details>
+</div>
+
+<!-- ===== Other work in progress ===== -->
+<hr class="section-divider">
+<h2 class="section-heading">Other work in progress</h2>
+
+<div class="research-section">
+    <div class="paper-title">
+        Gas Flaring and Child Health in Africa
+    </div>
+    <div class="paper-authors">with Mélodie Gultekin and Yohan Renard</div>
+</div>
+
+<div class="research-section">
+    <div class="paper-title">
+        A Behavioral Model of Cooling Technology Adoption
+        <span class="status-badge is-field">🔬 Field experiment</span>
+    </div>
+    <div class="paper-authors">with Louis-Gaëtan Giraudet, Sébastien Houde, and Fabrice Ochou</div>
+</div>
+
+<!-- ===== Dormant papers ===== -->
+<hr class="section-divider">
+<h2 class="section-heading">Dormant papers</h2>
+
+<div class="research-section">
+    <div class="paper-title">
+        The Effect of High Temperature on Seniors' Cognition: Evidence from European Countries
+    </div>
+    <div class="paper-authors">with Eric Bonsang and Clémentine Garrouste</div>
+
+    <details class="abstract-block">
+        <summary>Show abstract</summary>
+        <div class="paper-abstract">
+This study aims at investigating the effect of high temperatures on cognitive functions of individuals aged 50 and over. The empirical analysis exploits longitudinal data from the SHARE Survey on Health, Ageing and Retirement in Europe which is combined with measures of daily temperature collected by ground weather stations. Our estimates are based on an individual fixed-effect strategy and show that high temperatures impede the cognitive functions. Our results reveal a stronger effect for poorer individuals, those aged over 65 years as well as those who are overweight. The poorest elderly are the more vulnerable to global warming, which impacts their working memory and fluency. This may affect their capacity to make complex decisions and, in turn, negatively affect their standard of living. Thus, our results suggest that global warming could amplify socio-economic inequalities.
         </div>
     </details>
 </div>
@@ -151,48 +218,3 @@ document.querySelectorAll('details.abstract-block').forEach(function(d) {
     d.addEventListener('toggle', update);
 });
 </script>
-
-<!-- ===== Other work in progress ===== -->
-<hr style="margin: 50px 0; border: none; border-top: 1px solid #ddd;">
-
-<h2 style="font-size: 1.2em; font-weight: 600; color: #333; margin-bottom: 20px;">
-    Other work in progress
-</h2>
-
-<div class="research-section">
-    <div class="paper-title">
-        Gas Flaring and Child Health in Africa (with Mélodie Gultekin and Yohan Renard)
-    </div>
-</div>
-
-<div class="research-section">
-    <div class="paper-title">
-        A Behavioral Model of Cooling Technology Adoption (with Louis-Gaëtan Giraudet, Sébastien Houde, and Fabrice Ochou)
-    </div>
-    <span style="display: inline-block; margin-top: 6px; padding: 2px 10px;
-                 background-color: rgba(76, 175, 80, 0.10);
-                 color: #2e7d32;
-                 border: 1px solid rgba(46, 125, 50, 0.35);
-                 border-radius: 999px; font-size: 0.78em; font-weight: 500;">
-        🔬 Field experiment in progress
-    </span>
-</div>
-<!-- ===== Dormant papers ===== -->
-<hr style="margin: 50px 0; border: none; border-top: 1px solid #ddd;">
-
-<h2 style="font-size: 1.2em; font-weight: 600; color: #333; margin-bottom: 20px;">
-    Dormant papers
-</h2>
-
-<div class="research-section">
-    <div class="paper-title">
-        The effect of high temperature on seniors cognition: evidence from European countries (with Eric Bonsang and Clémentine Garrouste)
-    </div>
-
-    <details class="abstract-block">
-        <summary>Show abstract</summary>
-        <div class="paper-abstract">
-This study aims at investigating the effect of high temperatures on cognitive functions of individuals aged 50 and over. The empirical analysis exploits longitudinal data from the SHARE Survey on Health, Ageing and Retirement in Europe which is combined with measures of daily temperature collected by ground weather stations. Our estimates are based on an individual fixed-effect strategy and show that high temperatures impede the cognitive functions. Our results reveal a stronger effect for poorer individuals, those aged over 65 years as well as those who are overweight. The poorest elderly are the more vulnerable to global warming, which impacts their working memory and fluency. This may affect their capacity to make complex decisions and, in turn, negatively affect their standard of living. Thus, our results suggest that global warming could amplify socio-economic inequalities.
-        </div>
-    </details>
-</div>
