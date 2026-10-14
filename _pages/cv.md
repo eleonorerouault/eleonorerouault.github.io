@@ -6,11 +6,11 @@ author_profile: true
 ---
 
 **Education**
-* Ph.D. in Economics, Université Paris-Dauphine, PSL, 2019-2024
+* Ph.D. in Economics, Université Paris-Dauphine, PSL, 2024
   
    *Dissertation: Three essays on environmental shocks and health, from birth to the end of life*
   
-* MPhil in Health Economics, Université Paris-Dauphine, PSL, 2017-2019
+* MPhil in Health Economics, Université Paris-Dauphine, PSL, 2019
   
 **Research Interests**
 * Applied microeconomics, Development, Health, Agriculture, Environment, Childhood
@@ -38,5 +38,5 @@ author_profile: true
 
 **References**
 * Clémentine Garrouste 
-* Phillipe Quirion 
-* Flore Gubert 
+* Philippe Quirion 
+* Flore Gubert
